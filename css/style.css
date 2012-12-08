@@ -1,0 +1,283 @@
+html, body, body div, span, object, iframe,/* h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
+   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+.fl {float: left !important;}
+.fr {float: right !important;}
+.fc {display: block; margin: 0 auto;}
+.first {margin-left: 0 !important;}
+.last {margin-right: 0 !important;}
+
+/* center without width */
+.outer-center {float: left; left: 50%; position: relative; }
+.inner-center {float: left; left: -50%; position: relative; }
+
+/* optimize h1..h6 legibility */
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizelegibility;
+    color: #333;
+}
+body > * {color: #333;}
+body {font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;}
+
+
+/* 960px, 12 column grid system. 
+   adunate trebuie sa dea 12. 
+   ideal este sa folosesti containere pana la 6 */
+.container1, .container2, .container3, .container4, .container5, .container6, 
+.container7, .container8, .container9, .container10, .container11, .container12 
+    {display: inline; float: left; margin: 10px !important; box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+          -o-box-sizing: border-box;
+         -ms-box-sizing: border-box;
+             box-sizing: border-box;
+    }
+    
+.container1 {width: 60px;}
+.container2 {width: 140px;}
+.container3 {width: 220px;}
+.container4 {width: 300px;}
+.container5 {width: 380px;}
+.container6 {width: 460px;}
+.container7 {width: 540px;}
+.container8 {width: 620px;}
+.container9 {width: 700px;}
+.container10 {width: 780px;}
+.container11 {width: 860px;}
+.container12 {width: 940px;}
+
+
+.w25  {float: left; width: 25%; box-sizing: border-box;}
+.w33  {float: left; width: 33%; box-sizing: border-box;}
+.w50  {float: left; width: 50%; box-sizing: border-box;}
+.w100 {float: left; width: 100%; box-sizing: border-box;}
+
+/* buttons */
+.btn {padding: 7px 15px; display: inline-block; font-size: 14px; text-align: center; vertical-align: middle; cursor: pointer;
+     border-radius: 4px; text-decoration: none !important; border: 1px solid #999; 
+     background-color: #fefefe;
+     background-image:         linear-gradient(top,#fefefe, #e5e5e5);
+     background-image: -webkit-linear-gradient(top,#fefefe, #e5e5e5);
+     background-image:      -o-linear-gradient(top,#fefefe, #e5e5e5);
+     background-image:    -moz-linear-gradient(top,#fefefe, #e5e5e5);
+     background-image:     -ms-linear-gradient(top,#fefefe, #e5e5e5);
+     -webkit-user-select:none;
+        -moz-user-select:none;
+         -ms-user-select:none;
+             user-select:none;
+
+}
+.btn:hover, .btn:focus {
+    background-color: #e5e5e5;
+    background-image: none;
+}
+.btn:active {box-shadow: 0px 1px 2px #333 inset; background-color: #e5e5e5; background-image: none;}
+.btn-small {padding: 1px 5px; border-radius: 3px; font-size: 12px;}
+.btn-small:active {color: #005580;}
+
+.btn-blue {color: #ccc; border: 1px solid #bbb;
+           background-color: #04C;
+           background-image:         linear-gradient(top, #08C, #04C);
+           background-image: -webkit-linear-gradient(top, #08C, #04C);
+           background-image:      -o-linear-gradient(top, #08C, #04C);
+           background-image:    -moz-linear-gradient(top, #08C, #04C);
+           background-image:     -ms-linear-gradient(top, #08C, #04C);
+           /*-webkit-box-shadow: 0 1px 5px #A1A1A1;*/
+}
+.btn-blue:hover {color: #fff; background-color: #04C; background-image: none; }
+.btn-blue:active {box-shadow: 0px 1px 2px #333 inset; background-color: #04C; background-image: none;}
+
+.btn-light-blue {
+    background-color: #49bef3;
+    background-image:         linear-gradient(top, #49bef3, #00a5f0);
+    background-image: -webkit-linear-gradient(top, #49bef3, #00a5f0);
+    background-image:      -o-linear-gradient(top, #49bef3, #00a5f0);
+    background-image:    -moz-linear-gradient(top, #49bef3, #00a5f0);
+    background-image:     -ms-linear-gradient(top, #49bef3, #00a5f0);
+    color: #fff;
+    border: 1px solid #0184c0;
+}
+.btn-light-blue:hover {background-color: #00a5f0; background-image: none; color:#fff;}
+.btn-light-blue:active {box-shadow: 0px 1px 2px #333 inset; background-color: #00a5f0; background-image: none; }
+.btn-green {
+    background-color: #7FBF4D;
+    background-image:         linear-gradient(top, #7FBF4D, #63A62F);
+    background-image: -webkit-linear-gradient(top, #7FBF4D, #63A62F);
+    background-image:      -o-linear-gradient(top, #7FBF4D, #63A62F);
+    background-image:    -moz-linear-gradient(top, #7FBF4D, #63A62F);
+    background-image:     -ms-linear-gradient(top, #7FBF4D, #63A62F);
+    color: #fff;
+    border: 1px solid #63A62F;
+    border-bottom: 1px solid #5B992B;
+}
+.btn-green:hover, .btn-green:active {
+    background-color: #76B347;
+    background-image:         linear-gradient(top, #76B347, #5E9E2E);
+    background-image: -webkit-linear-gradient(top, #76B347, #5E9E2E);
+    background-image:      -o-linear-gradient(top, #76B347, #5E9E2E);
+    background-image:    -moz-linear-gradient(top, #76B347, #5E9E2E);
+    background-image:     -ms-linear-gradient(top, #76B347, #5E9E2E);
+    color: #fff;
+}
+.btn-green:active {box-shadow: 0px 1px 2px #333 inset;}
+.title {/* border-bottom: 1px solid #999; vechi */ border-bottom: 1px solid #ccc;}
+.tac {text-align: center;}
+.tal {text-align: left;}
+.tar {text-align: right;}
+.separator {width: 100%; margin: 10px auto; height: 1px; border-bottom: 1px solid #ccc; clear: both;}
+.box {border-radius: 5px; border: 1px solid #ccc; padding: 10px; box-shadow: 1px 1px 1px #ccc; background: #fff; margin-bottom: 10px;}
+.box-title {margin: 0; border: 1px solid #ccc; text-align: center;
+           border-top-left-radius: 3px;
+           border-top-right-radius: 3px;
+           background-color: #fafafa;
+           box-shadow: 1px 1px 1px #ccc;
+           
+           /* padding: 5px; 
+           background-image:         linear-gradient(top, #fff, #ccc);
+           background-image: -webkit-linear-gradient(top, #fff, #ccc);
+           background-image:    -moz-linear-gradient(top, #fff, #ccc);
+           background-image:      -o-linear-gradient(top, #fff, #ccc);
+           background-image:     -ms-linear-gradient(top, #fff, #ccc);*/
+}
+.box-title h3, .box-title h2, .box-title h4{margin: 7px 0; padding: 0;}
+
+.box h2, .box h3 {margin: 0 0 20px 0}
+.box-content {border: 1px solid #ccc; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; padding: 15px; background-color: #eee;box-shadow: 1px 1px 1px #ccc;}
+
+
+a {color: #08C; text-decoration: none;}
+a:hover {color: #005580; text-decoration: underline;}
+
+.error {display: table; margin: 5px 0; background: #B94A48; padding: 2px 5px; /*border-radius: 3px;*/ color: #fff;}
+.warning {display: table; margin: 5px 0; background: #FFAD33; padding: 2px 5px; /*border-radius: 3px;*/}
+.success {display: table; margin: 5px 0; background: #339933; padding: 2px 5px; /*border-radius: 3px;*/ color: #fff; }
+
+/* ---------------------------------- incepe distractia ---------------------------------- */
+
+body {font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333;}
+.wrap {width: 960px; margin: 0 auto;}
+
+header {}
+.nav {width: 100%; position: fixed;
+     background-image:         linear-gradient(top, #333,#000);
+     background-image: -webkit-linear-gradient(top, #333,#000);
+     background-image:    -moz-linear-gradient(top, #333,#000);
+     background-image:      -o-linear-gradient(top, #333,#000);
+     background-image:     -ms-linear-gradient(top, #333,#000);
+}
+.nav-bar {width: 960px; height: 40px; margin: 0 auto;}
+.nav-bar li {display: inline-block; height: 40px;}
+.nav-bar li a {float:left; padding: 10px 15px; text-decoration: none;}
+
+.logo {color: #fff; font-size: 16px; font-weight: bold; padding-left: 0px !important;}
+.logo:hover {color: #fff;}
+
+.main {min-height: 800px; padding: 70px 0 0 0 ; }
+
+.footer {min-height: 100px; padding-bottom: 10px;}
+
+.register-form {width: 400px;}
+.register-form label, .register-form input {margin-bottom: 10px;}
+.register-form label {min-width: 150px; float: left; text-align: right; padding-right: 10px;}
